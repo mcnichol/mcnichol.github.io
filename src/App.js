@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import {DefaultButton} from 'pivotal-ui/react/buttons'
-import logo from './logo.svg';
-import './App.css';
+
+import * as Code from 'pivotal-ui/css/code';
+import './css/prism.css';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <DefaultButton>Welcome to React</DefaultButton>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="terminal">
+          <ul className="terminal-dots"><li/><li/><li/></ul>
+          <pre>
+            <code className="language-java">{`
+public class McNichol {
+  public static void main(){
+    System.out.println("Well that's a good start...");
+  }
+}
+            `}</code>
+          </pre>
+        </div>
       </div>
     );
   }
