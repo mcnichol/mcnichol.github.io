@@ -8,6 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className"Header">
+          Michael McNichol
+        </div>
         <div className="terminal">
           <ul className="terminal-dots"><li/><li/><li/></ul>
           <pre>
@@ -17,7 +20,7 @@ public class McNichol {
     System.out.println("Well that's a good start...");
   }
 }
-            `}</code>
+`}</code>
           </pre>
         </div>
       </div>
