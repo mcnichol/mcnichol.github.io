@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import * as Code from 'pivotal-ui/css/code';
 import './css/prism.css';
 
-
 class App extends Component {
   render() {
     return (
