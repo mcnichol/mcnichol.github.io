@@ -8,8 +8,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="Header">
-        </div>
         <div className="terminal">
           <ul className="terminal-dots"><li/><li/><li/></ul>
           <pre>
