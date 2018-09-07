@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Header">
-          Michael McNichol
         </div>
         <div className="terminal">
           <ul className="terminal-dots"><li/><li/><li/></ul>
