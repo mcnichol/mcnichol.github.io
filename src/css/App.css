@@ -1,0 +1,11 @@
+.terminal .terminal-dots .terminal-dot-close {
+  background-color: #ED6B62; 
+}
+
+.terminal .terminal-dots .terminal-dot-min {
+  background-color: #F6BE4F; 
+}
+
+.terminal .terminal-dots .terminal-dot-max {
+  background-color: #66CD58; 
+}
