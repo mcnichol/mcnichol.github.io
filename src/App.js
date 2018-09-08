@@ -14,7 +14,7 @@ class App extends Component {
             <code className="language-java">
 {`
 public class McNichol {
-  public static void main(){
+  public static void main(String[] args){
     System.out.println("Well that's a good start...");
   }
 }
