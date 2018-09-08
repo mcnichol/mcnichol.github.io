@@ -1,30 +1,15 @@
-import React, { Component } from 'react';
-
-import * as Code from 'pivotal-ui/css/code';
-import './css/prism.css';
-import './css/App.css';
+import React, {Component} from 'react';
+import Code from "./components/code/Code";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="terminal">
-          <ul className="terminal-dots"><li className="terminal-dot-close"/><li className="terminal-dot-min"/><li className="terminal-dot-max"/></ul>
-          <pre>
-            <code className="language-java">
-{`
-public class McNichol {
-  public static void main(String[] args){
-    System.out.println("Well that's a good start...");
-  }
-}
-`}
-            </code>
-          </pre>
-        </div>
-      </div>
-    );
-  }
+
+    render() {
+        return (
+            <div className="App">
+                <Code/>
+            </div>
+        );
+    }
 }
 
 export default App;
