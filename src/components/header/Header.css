@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-pad {
+    width: 10%;
+}
+
+.test {
+    width: 35%;
+    min-width: 400px;
+
+}
+
+.impl {
+    width: 35%;
+    min-width: 530px;
+}
+
+.right-pad{
+    width: 10%;
+}

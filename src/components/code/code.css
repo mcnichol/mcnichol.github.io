@@ -74,6 +74,8 @@ pre.pre-scrollable {
 }
 
 .terminal {
+    margin: 2px;
+    height: 100%;
     background-color: #d4d9d9;
     padding: 6px 10px 12px 10px;
     border-radius: 6px;
@@ -109,6 +111,6 @@ pre.pre-scrollable {
 .terminal pre[class*="language-"] {
     margin: 2px 0 0 0;
     border-radius: 3px;
-    height: 320px;
-    overflow-y: auto
+    overflow-y: auto;
+    height: 84%;
 }
