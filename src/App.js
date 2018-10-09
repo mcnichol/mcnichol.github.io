@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Header from "./components/header/Header";
-import TitleBar from "./components/TitleBar";
+import TitleBar from "./components/TitleBar/TitleBar";
+import MainPage from "./components/MainPage/MainPage";
 
 class App extends Component {
 
@@ -8,7 +8,7 @@ class App extends Component {
         return (
             <div className="App">
                 <TitleBar/>
-                <Header/>
+                <MainPage/>
             </div>
         );
     }

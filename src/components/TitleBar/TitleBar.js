@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import './TitleBar.css';
 
 class TitleBar extends Component{
     render(){
         return (
-            <div id='titlebar'>
+            <div id='title-bar'>
                 <ul>
                     <li>Home</li>
                     <li>Blog</li>

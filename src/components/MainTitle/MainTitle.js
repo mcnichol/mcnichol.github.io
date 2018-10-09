@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Java from "../code/Java";
-import headerCode from './header-code'
-import './Header.css'
+import headerCode from './MainTitle-code'
+import './MainTitle.css'
 
-class Header extends Component {
+class MainTitle extends Component {
     render() {
         let testCode = headerCode.test;
         let implCode = headerCode.impl;
@@ -20,4 +20,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default MainTitle;
