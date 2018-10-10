@@ -1,4 +1,4 @@
 {
   "test": "@SpringBootTest\npublic class McNicholTest{\n\t@Test\n\tpublic void contextLoads(){\n\n\t}\n}",
-  "impl": "@SpringBootApplication\npublic class McNichol implements CommandLineRunner{\n\tpublic static void main(String... args){\n\t\tSpringApplication.run(McNichol.class, args);\n\t}\n\n\t@Override\n\tpublic void run (String... args){\n\t\tSystem.out.println(\"Rock and Roll Baby\");\n\t}\n}"
+  "impl": "@SpringBootApplication\npublic class McNichol implements CommandLineRunner{\n\tpublic static void main(String... args){\n\t\tSpringApplication.run(McNichol.class, args);\n\t}\n\n\t@Override\n\tpublic void run (String... args){\n\t\tSystem.out.println(\"Adventures in naming...\");\n\t}\n}"
 }
