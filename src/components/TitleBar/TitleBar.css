@@ -1,3 +1,33 @@
-#title-bar{
-    color: red;
+#title-bar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin: 0 10px;
+    padding: 0;
+}
+
+#title-bar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+    list-style: none;
+}
+
+#title-bar li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#title-bar li a:hover {
+    text-decoration: underline;
+}
+
+#title-bar li .active {
+    font-weight: bold;
 }
