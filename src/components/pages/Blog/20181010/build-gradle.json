@@ -1,0 +1,4 @@
+{
+  "test": "buildscript {\next {\nspringBootVersion = '2.0.5.RELEASE'\n}\nrepositories {\nmavenCentral()\n}\ndependencies {\nclasspath(\"org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}\")\n}\n}",
+  "impl": "@SpringBootApplication\npublic class McNichol implements CommandLineRunner{\n\tpublic static void main(String... args){\n\t\tSpringApplication.run(McNichol.class, args);\n\t}\n\n\t@Override\n\tpublic void run (String... args){\n\t\tSystem.out.println(\"Adventures in naming...\");\n\t}\n}"
+}
