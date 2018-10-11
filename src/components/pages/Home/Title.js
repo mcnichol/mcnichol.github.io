@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Java from "../../code/Java";
-import headerCode from './Title-code'
+import titleCode from './Title-code'
 import './Title.css'
 
 class Title extends Component {
     render() {
-        let testCode = headerCode.test;
-        let implCode = headerCode.impl;
+        let testCode = titleCode.test;
+        let implCode = titleCode.impl;
 
 
         return (
