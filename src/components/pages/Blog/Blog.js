@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import "../../code/code.css"
-import buildGradle from "./20181010/build-gradle"
 import Groovy from "../../code/Groovy";
+import TddGroup from "../../code/TddGroup";
+
+import buildGradle from "./20181010/build-gradle"
+import code1 from "./20181010/code-1"
+import Java from "../../code/Java";
 
 class Blog extends Component {
     render() {
@@ -66,13 +70,54 @@ class Blog extends Component {
                 </div>
                 <div>
                     <h3>Creating the App</h3>
-                    <p>From your working directory run: <code> spring init --build=gradle -g=rocks.mcnichol
-                        -d=web,cloud-starter-sleuth my-app</code></p>
-                    <p>This creates a folder named <code>my-app</code> which will have the skeleton of your project.
-                        Going inside that directory you will find that you have a build.gradle file which should look
-                        similar to this:</p>
+                    <p>
+                        From your working directory run: <code> spring init --build=gradle -g=rocks.mcnichol
+                        -d=web,cloud-starter-sleuth my-app</code>
+                    </p>
 
-                    <Groovy  code={buildGradle.test}/>
+                    <p>
+                        his creates a folder named <code>my-app</code> which will have the skeleton of your project.
+                        Going inside that directory you will find that you have a build.gradle file which should look
+                        similar to this:
+                    </p>
+
+                    <Groovy code={buildGradle.groovy}/>
+
+                    <p>Looks great!</p>
+
+                    <p>
+                        A clean gradle file is something worth appreciating, gotta give credit where credit is due.
+                        One thing that is subtle but really important for how I like to maintain my build scripts is
+                        that they extracted the springBootVersion and springCloudVersion into variables. Often what I
+                        ultimately will do is source these from a variables file making it easy for me to keep things
+                        updated. Bravo Spring Teaam!
+                    </p>
+
+                    <p>
+                        I advocate for Gradle because the groovy scripting underneath opens you up to significant
+                        flexibility. The problem is (and I've gone down this journey with many junior devs) that you
+                        can get away with so much that at some point your hands are tied and everything you touch seems
+                        to break something else.
+                    </p>
+
+                    <p>
+                        At this point is where all of my junior devs end up blaming the tool which I find somewhat
+                        unfair. If anything, there is room for adding some self-discovery and introspection through
+                        exploration but one can make an argument that is what your IDE or docs are for.
+                    </p>
+
+                    <p>
+                        My rule at the end of the day is if you want to deviate, you should have a high tolerance for
+                        pain. A truly admirable trait in any developer!
+                    </p>
+
+                    <p>
+                        Now we let's load up the Spring Boot application. Using the Spring Boot CLI the skeleton is there
+                        with a runnable application. I typically set my app in a side-by-side, test left, implementation
+                        right manner like below:
+                    </p>
+
+                    <TddGroup test={<Java code={code1.test}/>} impl={<Java code={code1.impl}/>}> </TddGroup>
                 </div>
             </div>
         )
