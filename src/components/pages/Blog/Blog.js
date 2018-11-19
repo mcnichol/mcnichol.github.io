@@ -76,7 +76,7 @@ class Blog extends Component {
                     </p>
 
                     <p>
-                        his creates a folder named <code>my-app</code> which will have the skeleton of your project.
+                        This creates a folder named <code>my-app</code> which will have the skeleton of your project.
                         Going inside that directory you will find that you have a build.gradle file which should look
                         similar to this:
                     </p>
@@ -90,20 +90,27 @@ class Blog extends Component {
                         One thing that is subtle but really important for how I like to maintain my build scripts is
                         that they extracted the springBootVersion and springCloudVersion into variables. Often what I
                         ultimately will do is source these from a variables file making it easy for me to keep things
-                        updated. Bravo Spring Teaam!
+                        updated. Bravo Spring Team!
                     </p>
 
                     <p>
                         I advocate for Gradle because the groovy scripting underneath opens you up to significant
-                        flexibility. The problem is (and I've gone down this journey with many junior devs) that you
+                        flexibility. The problem (and I've had this conversation with many junior devs) is that you
                         can get away with so much that at some point your hands are tied and everything you touch seems
-                        to break something else.
+                        to break something else making it appear brittle.
                     </p>
 
                     <p>
-                        At this point is where all of my junior devs end up blaming the tool which I find somewhat
-                        unfair. If anything, there is room for adding some self-discovery and introspection through
-                        exploration but one can make an argument that is what your IDE or docs are for.
+                        Somewhere around this point is where I see a dev throw their hands up in despair and
+                        blame the tool which I find somewhat unfair. If anything, I'd argue the problem is that the
+                        gradle structure has so many disparate tasks that are somewhat unobvious. To the untrained
+                        developer it is all magic working in the background. Short of valid syntax, there is limited
+                        clarity on the errors or side-effects that you have created and you lay at the mercy of
+                        documentation...which every camp suffers from in one way or another. Arguably one can say this
+                        is what your IDE is for. The alternative being Maven (which many of the greats I respect
+                        immensely wave the banner for, I just can't love XML for my build tooling. It reminds me of a
+                        quote I heard: "XML is like violence, if you aren't getting the results you want, you probably
+                        aren't using enough."
                     </p>
 
                     <p>
@@ -112,12 +119,17 @@ class Blog extends Component {
                     </p>
 
                     <p>
-                        Now we let's load up the Spring Boot application. Using the Spring Boot CLI the skeleton is there
-                        with a runnable application. I typically set my app in a side-by-side, test left, implementation
-                        right manner like below:
+                        Now we let's load up the Spring Boot application. Using the Spring Boot CLI the skeleton is
+                        there with a runnable application. I typically set my app in a side-by-side, test on the left,
+                        implementation on the right like below:
                     </p>
 
                     <TddGroup test={<Java code={code1.test}/>} impl={<Java code={code1.impl}/>}> </TddGroup>
+
+                    <p>
+                        In order to see the Trace and Span Id's made from Spring Cloud Sleuth, we need to hit an endpoint
+                        and fire off a log message. We can start with a few tests, then write the implementation.
+                    </p>
                 </div>
             </div>
         )
