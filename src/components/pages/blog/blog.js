@@ -151,7 +151,7 @@ class Blog extends Component {
                         in front of our repo. From here on we'll be pretty brief with the import statements at the top
                         of our code alongside not being repetitive with code, only showing the parts that are new. To
                         see the complete application you can see the working <a
-                        href="https://github.com/mcnichol/spring-trace-custom-blog.git">Custom Spring Trace App</a> in
+                        href="https://github.com/mcnichol/spring-sleuth-custom-logging.git">Custom Spring Trace App</a> in
                         Github.
                     </p>
 
