@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import TitleBar from "./components/TitleBar/TitleBar";
-import Home from "./components/pages/Home/Home";
-import Blog from "./components/pages/Blog/Blog";
+import TitleBar from "./components/title-bar/title-bar";
+import Home from "./components/pages/home/home";
+import Blog from "./components/pages/blog/blog";
+import About from "./components/pages/about/about";
+import Projects from "./components/pages/projects/projects";
 import {Route, Switch} from 'react-router-dom'
 import './css/App.css'
-import Projects from "./components/pages/Projects/Projects";
-import About from "./components/pages/About/About";
 
 class App extends Component {
 

@@ -1,4 +1,0 @@
-{
-  "test":"package rocks.mcnichol;\n\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.context.junit4.SpringRunner;\n\n@RunWith(SpringRunner.class)\n@SpringBootTest\npublic class DemoApplicationTests {\n\t@Test\n\tpublic void contextLoads() {\n\n\t}\n}",
-  "impl":"package rocks.mcnichol;\n\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class DemoApplication {\n\tpublic static void main(String[] args) {\n\t\tSpringApplication.run(DemoApplication.class, args);\n\t}\n}"
-}

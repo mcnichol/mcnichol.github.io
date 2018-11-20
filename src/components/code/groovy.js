@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-groovy';
-import Code from "./Code";
+import Code from "./code";
 
 
 class Groovy extends Component {

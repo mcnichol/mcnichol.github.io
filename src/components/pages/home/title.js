@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Java from "../../code/Java";
-import titleCode from './Title-code'
-import './Title.css'
+import Java from "../../code/java";
+import titleCode from './title-code'
+import './title.css'
 
 class Title extends Component {
     render() {

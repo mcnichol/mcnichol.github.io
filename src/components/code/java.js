@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-java';
 import './custom-prism-theme/darcula.css';
-import Code from "./Code";
+import Code from "./code";
 
 class Java extends Component {
 

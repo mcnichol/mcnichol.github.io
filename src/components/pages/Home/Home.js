@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import Title from "./Title";
+import Title from "./title";
 import dapper from "../../../res/images/dapper.jpg"
 
-import "./Home.css"
+import "./home.css"
 
 class Home extends Component {
     render() {
@@ -10,7 +10,7 @@ class Home extends Component {
             <div className="home">
                 <Title/>
                 <div className="photo-container">
-                    <img className="photo" src={dapper}/>
+                    <img className="photo" src={dapper} alt="dapper-icon"/>
                 </div>
             </div>
         )
