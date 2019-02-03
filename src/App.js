@@ -5,7 +5,7 @@ import Blog from "./components/pages/blog/blog";
 import About from "./components/pages/about/about";
 import Projects from "./components/pages/projects/projects";
 import {Route, Switch} from 'react-router-dom'
-import './css/App.css'
+import './css/App.scss'
 
 class App extends Component {
 

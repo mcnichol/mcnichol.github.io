@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Title from "./title";
 import dapper from "../../../res/images/dapper.jpg"
 
-import "./home.css"
+import "./home.scss"
 
 class Home extends Component {
     render() {

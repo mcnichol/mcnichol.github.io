@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Java from "../../code/java";
 import titleCode from './title-code'
-import './title.css'
+import './title.scss'
 
 class Title extends Component {
     render() {

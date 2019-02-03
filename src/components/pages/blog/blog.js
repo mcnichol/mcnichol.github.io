@@ -8,8 +8,7 @@ import code2 from "./20181010/code-2"
 import code3 from "./20181010/code-3"
 import Java from "../../code/java";
 
-import "../../code/code.css"
-import "./blog.css"
+import "./blog.scss"
 
 class Blog extends Component {
     render() {

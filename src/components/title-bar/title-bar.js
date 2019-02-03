@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom'
-import './title-bar.css';
+import './title-bar.scss';
 
 
 class TitleBar extends Component {
