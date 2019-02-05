@@ -1,3 +1,23 @@
-.posts {
-    padding: 2vw;
+.blog {
+  display: flex;
+  flex-direction: row;
+
+  .left-pad{
+    flex: 1;
+  }
+
+  .container {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+
+    .post {
+      padding: 1em;
+    }
+  }
+
+  .right-pad{
+    flex: 1;
+  }
+
 }

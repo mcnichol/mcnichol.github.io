@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 24px;
 }
@@ -11,12 +12,14 @@
 .test {
     width: 35%;
     min-width: 400px;
+    padding: 1em 0;
 
 }
 
 .impl {
     width: 35%;
-    min-width: 530px;
+    min-width: 400px;
+    padding: 1em 0;
 }
 
 .right-pad {
