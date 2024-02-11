@@ -4,7 +4,7 @@ import Home from "./components/pages/home/home";
 import Blog from "./components/pages/blog/blog";
 import About from "./components/pages/about/about";
 import Projects from "./components/pages/projects/projects";
-import {Route, Switch} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import './css/App.scss'
 
 class App extends Component {
@@ -13,12 +13,12 @@ class App extends Component {
         return (
             <div className="App">
                 <TitleBar/>
-                <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/blog" component={Blog}/>
-                    <Route path="/project" component={Projects}/>
-                    <Route path="/about" component={About}/>
-                </Switch>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/blog" element={<Blog/>}/>
+                    <Route path="/project" element={<Projects/>}/>
+                    <Route path="/about" element={<About/>}/>
+                </Routes>
             </div>
         );
     }
